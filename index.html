@@ -1,12 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> HI! THIS WILL BE MY JAVASCRIPT CALCULATOR PROJECT
+  </title>
+  </head>
 <body>
-  
+  <div id="maincontainer">
+    
+   <div class="screencont">
+     <input name="thescreen" class="screen" id="screen">
+   </div>
+    
+    <div class="buttons">
+      <div class="rows">
+        <input type="button" class="btn" value="CL" onclick="thescreen.value=''">
+        <input type="button" class="btn" value="D"
+              onclick="thescreen.value =
+                   thescreen.value.slice(0, -1)";>
+        <input type="button" class="btn" value="%" onclick = "thescreen.value += '%'">
+        <input type="button" value="/" onclick="thescreen.value += '/'">
+      </div>
+      
+      <div class="rows">
+  <!--needed to work here-->     <input type="button" class="btn" id="sin" value="sin" onclick="thescreen.value = Math.sin(thescreen.value);">
+  <!--needed to work here probably prevent default-->
+        <input type="button" class="btn" id="cos" value="cos" onclick="cos()">
+  <!--needed to work here-->     <input type="button" class="btn" id="tan" value="tan" onclick="tan()">
+        <input type="button" class="btn" value="*" onclick="thescreen.value += '*'">
+      </div>
+      
+      <div class="rows">
+ <!--needed to work here probably prevent default-->
+        <input type="button" class="btn" id="log" value="log" onclick="log()">
+        <input type="button" class="btn" id="pi" value="pi" onclick="pi()">
+ <!--needed to work here probably prevent default-->
+        <input type="button" class="btn" id="pow" value="pow" onclick="pow()">
+        <input type="button" class="btn" value="-" onclick="thescreen.value += '-'">
+      </div>
+      
+      <div class="rows">
+ <!--needed to work here probably prevent default-->
+        <input type="button" class="btn" id="sqt" value="sqt" onclick="sqt()">
+  <!--needed to work here probably prevent default-->
+        <input type="button" class="btn" id="open" value="(" onclick="openb()">
+ <!--needed to work here probably prevent default-->
+        <input type="button" class="btn" value=")" onclick ="thescreen.value += ')'">
+        <input type="button" class="btn" value="+" onclick="thescreen.value += '+'">
+      </div>
+      
+       <div class="rows">
+        <input type="button" class="btn" value="7" onclick="thescreen.value += '7'">
+        <input type="button" class="btn" value="8" onclick="thescreen.value += '8'">
+        <input type="button" class="btn" value="9" onClick="thescreen.value += '9'">
+  <!--needed to work here probably prevent default-->
+   <input type="button" class="btn" id="e" value="e" onclick="e()">
+      </div>
+      
+       <div class="rows">
+        <input type="button" class="btn" value="4" onclick="thescreen.value += '4'">
+        <input type="button" class="btn" value="5" onclick="thescreen.value += '5'">
+        <input type="button" class="btn" value="6" onclick="thescreen.value += '6'">
+        <input type="button" class="btn" value="00" onclick="thescreen.value += '00'">
+      </div>
+      
+      <div class="rows">
+        <input type="button" class="btn" id="one" value="1" onclick="thescreen.value += '1'">
+        <input type="button" class="btn" id="two" value="2" onclick="thescreen.value += '2'">
+        <input type="button" class="btn" value="3" onclick="thescreen.value += '3'">
+        <input type="button" class="btn" value="0" onclick="thescreen.value += '0'">
+      </div> 
+      
+      <div class="rows">
+         <input type="button" class="btn" id="last1" value="." onclick="thescreen.value += '.'">
+ <input type="button" class="btn" id="last2" value="=" onclick="thescreen.value = eval(thescreen.value)">
+      </div>
+    </div>
+  </div>
+<!-- <button id="letsgoforb"> Here </button> -->
 </body>
 </html>
