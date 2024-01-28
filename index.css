@@ -1,0 +1,59 @@
+body {
+    background: black;
+    box-sizing: border-box;
+  }
+    #maincontainer  {
+                     position: relative;
+                     width: 80%;
+                     transform: translate(12%, 40%);
+                     border: 2px solid white;
+      
+    }
+    
+    #screen  {
+                     height: 60px;
+                     pointer-events:none;
+                     border-radius: 3px;
+                     border:;
+                     cursor: pointer;
+                     font-weight: bold;
+                     font-size: 1.3rem;
+                     text-decoration: none;
+                     text-align: right;
+                     width: 97%;
+                     margin-bottom: 5px;
+                     margin-top: 3px;
+                     border-radius: 10px;
+    }
+
+    #screen:hover {
+                     border: 2px solid #3eff55;
+                     outline: none;
+                     border: none;
+    }
+    
+    .buttons     {
+                     width: 100%;
+    }
+    
+    .rows         {
+                     width: 100%;
+    }
+    .rows input   {
+                     width: 23.01%;
+                     margin: auto;
+                     height: 50px;
+                     margin-left: 3px;
+                     margin-bottom: 5px;
+                     font-size: 1.2rem;
+                     border-radius: 30px;
+                     border: none;
+    }
+    
+    #last1 {
+                    width: 35%;
+    }
+    
+    #last2 {
+                    width: 60%;
+    }
