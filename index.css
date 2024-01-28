@@ -1,33 +1,40 @@
-body {
-    background: black;
-    box-sizing: border-box;
+   * {
+ box-sizing:border-box;
+ padding:0;margin:0;
+}
+
+   body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width:100vw;
+  background: black;
   }
+  
     #maincontainer  {
-                     position: relative;
-                     width: 80%;
-                     transform: translate(12%, 40%);
+                     display:flex;
+                     flex-direction: column;
+                     width:80%;
+                     height:55%;
                      border: 2px solid white;
-      
     }
     
-    #screen  {
-                     height: 60px;
-                     pointer-events:none;
-                     border-radius: 3px;
-                     border:;
-                     cursor: pointer;
-                     font-weight: bold;
-                     font-size: 1.3rem;
-                     text-decoration: none;
-                     text-align: right;
-                     width: 97%;
-                     margin-bottom: 5px;
-                     margin-top: 3px;
-                     border-radius: 10px;
+    .screencont {
+                     width:100%;
     }
-
+    .screencont .screen {
+                     width:100%;
+                     margin: 0 0 15px 0;
+                     height:60px;
+                     text-decoration:none;
+                     text-align:right;
+                     font-weight:bold;
+                     font-size:1.7rem;
+                     pointer-events:none;
+    }
+   
     #screen:hover {
-                     border: 2px solid #3eff55;
                      outline: none;
                      border: none;
     }
@@ -57,3 +64,26 @@ body {
     #last2 {
                     width: 60%;
     }
+    
+    @media only screen and (min-width:768px){
+      body {
+        background:red;
+      }
+      #maincontainer {
+        height:40%;
+      }
+      .screencont .screen {
+        height:100px;
+      }
+      
+      .rows input {
+        width:24%;
+        height:80px;
+        font-size:2.5rem;
+        font-weight:bold;
+      margin: 0 0 12px 4px;
+      }
+      
+    }
+   
+     

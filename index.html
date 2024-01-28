@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> HI! THIS WILL BE MY JAVASCRIPT CALCULATOR PROJECT
+  <title> HI! THIS IS MY JAVASCRIPT CALCULATOR PROJECT
   </title>
   <link rel="stylesheet" href="index.css">
   </head>
 <body>
   <div id="maincontainer">
-    
+  
    <div class="screencont">
      <input name="thescreen" class="screen" id="screen">
    </div>
@@ -25,11 +25,13 @@
       </div>
       
       <div class="rows">
-  <!--needed to work here-->     <input type="button" class="btn" id="sin" value="sin" onclick="thescreen.value = Math.sin(thescreen.value);">
+  <!--needed to work here-->    
+         <input type="button" class="btn" id="sin" value="sin" onclick="thescreen.value = Math.sin(thescreen.value);">
   <!--needed to work here probably prevent default-->
-        <input type="button" class="btn" id="cos" value="cos" onclick="cos()">
-  <!--needed to work here-->     <input type="button" class="btn" id="tan" value="tan" onclick="tan()">
-        <input type="button" class="btn" value="*" onclick="thescreen.value += '*'">
+          <input type="button" class="btn" id="cos" value="cos" onclick="cos()">
+  <!--needed to work here-->     
+          <input type="button" class="btn" id="tan" value="tan" onclick="tan()">
+          <input type="button" class="btn" value="*" onclick="thescreen.value += '*'">
       </div>
       
       <div class="rows">
@@ -51,12 +53,12 @@
         <input type="button" class="btn" value="+" onclick="thescreen.value += '+'">
       </div>
       
-       <div class="rows">
+      <div class="rows">
         <input type="button" class="btn" value="7" onclick="thescreen.value += '7'">
         <input type="button" class="btn" value="8" onclick="thescreen.value += '8'">
         <input type="button" class="btn" value="9" onClick="thescreen.value += '9'">
   <!--needed to work here probably prevent default-->
-   <input type="button" class="btn" id="e" value="e" onclick="e()">
+         <input type="button" class="btn" id="e" value="e" onclick="e()">
       </div>
       
        <div class="rows">
@@ -75,10 +77,11 @@
       
       <div class="rows">
          <input type="button" class="btn" id="last1" value="." onclick="thescreen.value += '.'">
- <input type="button" class="btn" id="last2" value="=" onclick="thescreen.value = eval(thescreen.value)">
+         <input type="button" class="btn" id="last2" value="=" onclick="thescreen.value = eval(thescreen.value)">
       </div>
     </div>
+  
   </div>
-<!-- <button id="letsgoforb"> Here </button> -->
+
 </body>
 </html>
