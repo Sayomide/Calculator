@@ -25,20 +25,20 @@
       </div>
       
       <div class="rows">
-  <!--needed to work here-->    
+  <!--needed to work here prob prevent default till sin tan and others can be written and use by eval button-->    
          <input type="button" class="btn" id="sin" value="sin" onclick="thescreen.value = Math.sin(thescreen.value);">
-  <!--needed to work here probably prevent default-->
+  
           <input type="button" class="btn" id="cos" value="cos" onclick="cos()">
-  <!--needed to work here-->     
+  
           <input type="button" class="btn" id="tan" value="tan" onclick="tan()">
           <input type="button" class="btn" value="*" onclick="thescreen.value += '*'">
       </div>
       
       <div class="rows">
- <!--needed to work here probably prevent default-->
+ <!--needed to work here probably prevent default with pow and log-->
         <input type="button" class="btn" id="log" value="log" onclick="log()">
         <input type="button" class="btn" id="pi" value="pi" onclick="pi()">
- <!--needed to work here probably prevent default-->
+
         <input type="button" class="btn" id="pow" value="pow" onclick="pow()">
         <input type="button" class="btn" value="-" onclick="thescreen.value += '-'">
       </div>
@@ -77,11 +77,10 @@
       
       <div class="rows">
          <input type="button" class="btn" id="last1" value="." onclick="thescreen.value += '.'">
-         <input type="button" class="btn" id="last2" value="=" onclick="thescreen.value = eval(thescreen.value)">
+         <input type="button" class="btn" id="last2" value="=" >
       </div>
     </div>
-  
   </div>
-
+<script src="index.js"></script>
 </body>
 </html>

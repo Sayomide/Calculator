@@ -76,7 +76,13 @@ function pi() {
   })
 }
 
-
+document.querySelector("#last2").addEventListener("click", ()=> {
+  if(thescreen.value == ''){
+    return;
+  }else {
+thescreen.value = eval(thescreen.value);
+  }
+})
 //localStorage.setItem('first', '5')
 //localStorage.setItem('second', '15')
 //localStorage.setItem('third', '35')
