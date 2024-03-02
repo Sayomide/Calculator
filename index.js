@@ -9,20 +9,21 @@ let thepow = document.querySelector("#pow");
 
 // needed to work here probably prevent default, brackets and others
 //let thetedt =document.createTextNode(This is the co.)
-let fortheb = document.querySelector('#letsgoforb')
+let fortheb = document.querySelector('#letsgoforb');
 //fortheb.onclick = () => {
 //  console.log('yes you click it');}
 
 function e() {
   let e = 'e';
   const ex = document.querySelector("#e");
-  
+  ex.addEventListener('click', handleClick);
+
   function handleClick() {
-    thescreen.value += "e";
+    thescreen.value = 'e';
     e = 2.71828183;
     ex.removeEventListener('click', handleClick);
   }
-  ex.addEventListener('click', handleClick);
+  
 }
 
 function openb() {
